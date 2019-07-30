@@ -1,0 +1,36 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+    --main-bg-color: #222428
+
+}
+ion-content {
+    user-select: none;
+}
+ion-item {
+    --padding-start: 10px;
+}
+.unread {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    margin-top: 15px;
+    margin-right: 8px;
+    align-self: start;
+}
+.read {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: inherit;
+    margin-top: 15px;
+    margin-right: 8px;
+    align-self: start;
+}
+ion-item h2 {
+    font-weight: 500 !important;
+}
+ion-item h3 {
+    color: #777;
+}

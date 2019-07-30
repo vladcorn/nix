@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+    <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-title>Loren</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-searchbar></ion-searchbar>
+    <ion-content>
+        <ion-refresher slot="fixed" id="refresher">
+            <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+
+        <ion-list></ion-list>
+
+        <ion-infinite-scroll threshold="100px" id="infinite-scroll">
+            <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-app>
+<script type="text/javascript" src="vanilla.js"></script>
+</body>
+</html>
